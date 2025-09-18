@@ -1,0 +1,1458 @@
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:1:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:1:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:1:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 13:58:00 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 2260,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 82665472,
+      heapTotal: 39571456,
+      heapUsed: 24649040,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271377.796 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 13:58:00'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:1:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:1:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:1:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 13:58:21 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 13668,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 79978496,
+      heapTotal: 38522880,
+      heapUsed: 27522144,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271398.093 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 13:58:21'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:1:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:1:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:1:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 13:58:37 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 4876,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 82661376,
+      heapTotal: 39571456,
+      heapUsed: 24610728,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271414.156 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 1,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 13:58:37'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:2:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 13:58:41 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 7652,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 80121856,
+      heapTotal: 38522880,
+      heapUsed: 27527936,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271418.203 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 13:58:41'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:2:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 13:58:42 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 15872,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 80441344,
+      heapTotal: 38522880,
+      heapUsed: 27506664,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271419.5 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 13:58:42'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:2:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 13:58:48 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 17592,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 82350080,
+      heapTotal: 39571456,
+      heapUsed: 24605032,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271425.468 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 13:58:48'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:2:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 13:58:55 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 8008,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 82546688,
+      heapTotal: 39571456,
+      heapUsed: 25447448,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271432.484 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 13:58:55'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:2:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 14:01:06 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 16880,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 80289792,
+      heapTotal: 38522880,
+      heapUsed: 27494136,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271563.953 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 14:01:06'
+}
+{
+  error: Error: Cannot find module 'swagger-jsdoc'
+  Require stack:
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\app.ts
+  - C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\server.ts
+      at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)
+      at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)
+      at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)
+      at Function._load (node:internal/modules/cjs/loader:1192:37)
+      at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+      at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)
+      at Module.require (node:internal/modules/cjs/loader:1463:12)
+      at require (node:internal/modules/helpers:147:16)
+      at Object.<anonymous> (C:\Users\MelDevSoft\Desktop\tasks-manager-main\server\src\config\swagger.ts:2:1)
+      at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14) {
+    code: 'MODULE_NOT_FOUND',
+    requireStack: [
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts',
+      'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts'
+    ]
+  },
+  level: 'error',
+  message: "uncaughtException: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  stack: "Error: Cannot find module 'swagger-jsdoc'\n" +
+    'Require stack:\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\app.ts\n' +
+    '- C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\server.ts\n' +
+    '    at Function._resolveFilename (node:internal/modules/cjs/loader:1383:15)\n' +
+    '    at defaultResolveImpl (node:internal/modules/cjs/loader:1025:19)\n' +
+    '    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1030:22)\n' +
+    '    at Function._load (node:internal/modules/cjs/loader:1192:37)\n' +
+    '    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n' +
+    '    at wrapModuleLoad (node:internal/modules/cjs/loader:237:24)\n' +
+    '    at Module.require (node:internal/modules/cjs/loader:1463:12)\n' +
+    '    at require (node:internal/modules/helpers:147:16)\n' +
+    '    at Object.<anonymous> (C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts:2:1)\n' +
+    '    at Module.<anonymous> (node:internal/modules/cjs/loader:1706:14)',
+  exception: true,
+  date: 'Thu Sep 18 2025 14:02:14 GMT+0000 (heure moyenne de Greenwich)',
+  process: {
+    pid: 1780,
+    uid: null,
+    gid: null,
+    cwd: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v22.19.0',
+    argv: [ 'C:\\Program Files\\nodejs\\node.exe', 'src/server.ts' ],
+    memoryUsage: {
+      rss: 82464768,
+      heapTotal: 39833600,
+      heapUsed: 24239144,
+      external: 20806661,
+      arrayBuffers: 18378323
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 271631.953 },
+  trace: [
+    {
+      column: 15,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._resolveFilename',
+      line: 1383,
+      method: '_resolveFilename',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'defaultResolveImpl',
+      line: 1025,
+      method: null,
+      native: false
+    },
+    {
+      column: 22,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'resolveForCJSWithHooks',
+      line: 1030,
+      method: null,
+      native: false
+    },
+    {
+      column: 37,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Function._load',
+      line: 1192,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:diagnostics_channel',
+      function: 'TracingChannel.traceSync',
+      line: 322,
+      method: 'traceSync',
+      native: false
+    },
+    {
+      column: 24,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'wrapModuleLoad',
+      line: 237,
+      method: null,
+      native: false
+    },
+    {
+      column: 12,
+      file: 'node:internal/modules/cjs/loader',
+      function: 'Module.require',
+      line: 1463,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 16,
+      file: 'node:internal/modules/helpers',
+      function: 'require',
+      line: 147,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: 'C:\\Users\\MelDevSoft\\Desktop\\tasks-manager-main\\server\\src\\config\\swagger.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 14,
+      file: 'node:internal/modules/cjs/loader',
+      function: null,
+      line: 1706,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2025-09-18 14:02:14'
+}
