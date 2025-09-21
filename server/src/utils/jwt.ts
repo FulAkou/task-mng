@@ -12,14 +12,11 @@ export interface TokenPair {
 }
 
 export class JWTService {
-  private static readonly ACCESS_TOKEN_SECRET =
-    process.env.JWT_SECRET || "fallback-secret";
+  private static readonly ACCESS_TOKEN_SECRET = process.env.JWT_SECRET || "fallback-secret";
   private static readonly REFRESH_TOKEN_SECRET =
     process.env.JWT_REFRESH_SECRET || "fallback-refresh-secret";
-  private static readonly ACCESS_TOKEN_EXPIRES_IN =
-    process.env.JWT_EXPIRES_IN || "15m";
-  private static readonly REFRESH_TOKEN_EXPIRES_IN =
-    process.env.JWT_REFRESH_EXPIRES_IN || "7d";
+  private static readonly ACCESS_TOKEN_EXPIRES_IN = process.env.JWT_EXPIRES_IN || "15m";
+  private static readonly REFRESH_TOKEN_EXPIRES_IN = process.env.JWT_REFRESH_EXPIRES_IN || "7d";
 
   /**
    * Génère une paire de tokens (access + refresh)

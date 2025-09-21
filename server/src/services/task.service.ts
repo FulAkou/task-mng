@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import { ITask, Task } from "../models/task.model";
 import { CreateTaskInput, UpdateTaskInput } from "../schemas/task.schema";
 
@@ -5,10 +6,7 @@ export class TaskService {
   /**
    * Créer une nouvelle tâche
    */
-  static async createTask(
-    taskData: CreateTaskInput,
-    userId: string
-  ): Promise<ITask> {
+  static async createTask(taskData: CreateTaskInput, userId: string): Promise<ITask> {
     const task = new Task({
       ...taskData,
       userId,
@@ -26,7 +24,7 @@ export class TaskService {
       status?: string;
       priority?: string;
       search?: string;
-    }
+    },
   ): Promise<ITask[]> {
     let query = Task.find({ userId });
 
@@ -69,13 +67,12 @@ export class TaskService {
   static async updateTask(
     taskId: string,
     updateData: UpdateTaskInput,
-    userId: string
+    userId: string,
   ): Promise<ITask> {
-    const task = await Task.findOneAndUpdate(
-      { _id: taskId, userId },
-      updateData,
-      { new: true, runValidators: true }
-    );
+    const task = await Task.findOneAndUpdate({ _id: taskId, userId }, updateData, {
+      new: true,
+      runValidators: true,
+    });
 
     if (!task) {
       throw new Error("Tâche non trouvée");
@@ -101,12 +98,12 @@ export class TaskService {
   static async updateTaskStatus(
     taskId: string,
     status: "pending" | "in-progress" | "completed",
-    userId: string
+    userId: string,
   ): Promise<ITask> {
     const task = await Task.findOneAndUpdate(
       { _id: taskId, userId },
       { status },
-      { new: true, runValidators: true }
+      { new: true, runValidators: true },
     );
 
     if (!task) {
@@ -127,7 +124,7 @@ export class TaskService {
     overdue: number;
   }> {
     const stats = await Task.aggregate([
-      { $match: { userId: new (require("mongoose").Types.ObjectId)(userId) } },
+      { $match: { userId: new mongoose.Types.ObjectId(userId) } },
       {
         $group: {
           _id: null,
@@ -145,10 +142,7 @@ export class TaskService {
             $sum: {
               $cond: [
                 {
-                  $and: [
-                    { $ne: ["$status", "completed"] },
-                    { $lt: ["$dueDate", new Date()] },
-                  ],
+                  $and: [{ $ne: ["$status", "completed"] }, { $lt: ["$dueDate", new Date()] }],
                 },
                 1,
                 0,

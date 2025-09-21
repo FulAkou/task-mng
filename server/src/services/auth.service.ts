@@ -10,11 +10,7 @@ export class AuthService {
   /**
    * Inscription d'un nouvel utilisateur
    */
-  static async register(
-    name: string,
-    email: string,
-    password: string
-  ): Promise<AuthResult> {
+  static async register(name: string, email: string, password: string): Promise<AuthResult> {
     // Vérifier si l'utilisateur existe déjà
     const existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -39,10 +35,10 @@ export class AuthService {
 
     // Retourner l'utilisateur et les tokens
 
-    const userWithoutSensitiveData = user.toObject() as Omit<
-      IUser,
-      "password" | "refreshToken"
-    > & { password?: string; refreshToken?: string };
+    const userWithoutSensitiveData = user.toObject() as Omit<IUser, "password" | "refreshToken"> & {
+      password?: string;
+      refreshToken?: string;
+    };
     delete userWithoutSensitiveData.password;
     delete userWithoutSensitiveData.refreshToken;
 
@@ -77,10 +73,10 @@ export class AuthService {
 
     // Retourner l'utilisateur et les tokens
 
-    const userWithoutSensitiveData = user.toObject() as Omit<
-      IUser,
-      "password" | "refreshToken"
-    > & { password?: string; refreshToken?: string };
+    const userWithoutSensitiveData = user.toObject() as Omit<IUser, "password" | "refreshToken"> & {
+      password?: string;
+      refreshToken?: string;
+    };
     delete userWithoutSensitiveData.password;
     delete userWithoutSensitiveData.refreshToken;
 
@@ -93,9 +89,7 @@ export class AuthService {
   /**
    * Rafraîchir le token d'accès
    */
-  static async refreshToken(
-    refreshToken: string
-  ): Promise<{ accessToken: string }> {
+  static async refreshToken(refreshToken: string): Promise<{ accessToken: string }> {
     // Vérifier le refresh token
     const payload = JWTService.verifyRefreshToken(refreshToken);
 
@@ -121,9 +115,7 @@ export class AuthService {
   /**
    * Obtenir le profil utilisateur
    */
-  static async getProfile(
-    userId: string
-  ): Promise<Omit<IUser, "password" | "refreshToken">> {
+  static async getProfile(userId: string): Promise<Omit<IUser, "password" | "refreshToken">> {
     const user = await User.findById(userId).select("-password -refreshToken");
     if (!user) {
       throw new Error("Utilisateur non trouvé");

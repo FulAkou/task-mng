@@ -58,7 +58,7 @@ const taskSchema = new Schema<ITask>(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
 // Index pour optimiser les requêtes

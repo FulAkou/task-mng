@@ -70,11 +70,7 @@ export class TaskController {
 
     const updatedTask = await TaskService.updateTask(taskId, req.body, userId);
 
-    return ResponseService.success(
-      res,
-      updatedTask,
-      "Tâche mise à jour avec succès"
-    );
+    return ResponseService.success(res, updatedTask, "Tâche mise à jour avec succès");
   });
 
   /**
@@ -96,36 +92,26 @@ export class TaskController {
   /**
    * Changer le statut d'une tâche
    */
-  static updateTaskStatus = asyncHandler(
-    async (req: Request, res: Response) => {
-      const userId = req.user?.userId;
-      const taskId = req.params.id;
-      const { status } = req.body;
+  static updateTaskStatus = asyncHandler(async (req: Request, res: Response) => {
+    const userId = req.user?.userId;
+    const taskId = req.params.id;
+    const { status } = req.body;
 
-      if (!userId) {
-        return ResponseService.unauthorized(res, "Utilisateur non authentifié");
-      }
+    if (!userId) {
+      return ResponseService.unauthorized(res, "Utilisateur non authentifié");
+    }
 
-      if (!["pending", "in-progress", "completed"].includes(status)) {
-        return ResponseService.validationError(
-          res,
-          "Statut invalide. Doit être pending, in-progress ou completed"
-        );
-      }
-
-      const updatedTask = await TaskService.updateTaskStatus(
-        taskId,
-        status,
-        userId
-      );
-
-      return ResponseService.success(
+    if (!["pending", "in-progress", "completed"].includes(status)) {
+      return ResponseService.validationError(
         res,
-        updatedTask,
-        "Statut de la tâche mis à jour avec succès"
+        "Statut invalide. Doit être pending, in-progress ou completed",
       );
     }
-  );
+
+    const updatedTask = await TaskService.updateTaskStatus(taskId, status, userId);
+
+    return ResponseService.success(res, updatedTask, "Statut de la tâche mis à jour avec succès");
+  });
 
   /**
    * Obtenir les statistiques des tâches
@@ -139,10 +125,6 @@ export class TaskController {
 
     const stats = await TaskService.getTaskStats(userId);
 
-    return ResponseService.success(
-      res,
-      stats,
-      "Statistiques récupérées avec succès"
-    );
+    return ResponseService.success(res, stats, "Statistiques récupérées avec succès");
   });
 }

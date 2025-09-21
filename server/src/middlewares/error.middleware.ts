@@ -10,7 +10,7 @@ export const errorHandler = (
   error: AppError,
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction,
 ): void => {
   let statusCode = error.statusCode || 500;
   let message = error.message || "Une erreur interne est survenue";
@@ -23,8 +23,8 @@ export const errorHandler = (
     statusCode = 400;
     message = "Format d'ID invalide";
   } else if (
-    typeof (error as any).code === "number" &&
-    (error as any).code === 11000
+    typeof (error as { code?: number }).code === "number" &&
+    (error as { code?: number }).code === 11000
   ) {
     statusCode = 409;
     message = "Cette ressource existe déjà";
@@ -53,16 +53,14 @@ export const errorHandler = (
   ResponseService.error(res, message, statusCode, error.stack);
 };
 
-export const notFoundHandler = (
-  req: Request,
-  res: Response,
-  next: NextFunction
-): void => {
+export const notFoundHandler = (req: Request, res: Response, next: NextFunction): void => {
   ResponseService.notFound(res, `Route ${req.originalUrl} non trouvée`);
 };
 
-export const asyncHandler = (fn: Function) => {
-  return (req: Request, res: Response, next: NextFunction) => {
+export const asyncHandler = <T extends Request = Request, U extends Response = Response>(
+  fn: (req: T, res: U, next: NextFunction) => Promise<unknown>,
+) => {
+  return (req: T, res: U, next: NextFunction) => {
     Promise.resolve(fn(req, res, next)).catch(next);
   };
 };

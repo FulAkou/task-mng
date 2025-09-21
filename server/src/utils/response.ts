@@ -1,10 +1,10 @@
 import { Response } from "express";
 
-export interface ApiResponse<T = any> {
+export interface ApiResponse<T = unknown> {
   success: boolean;
   message: string;
   data?: T;
-  error?: string;
+  error?: string | string[];
   timestamp: string;
 }
 
@@ -16,7 +16,7 @@ export class ResponseService {
     res: Response,
     data: T,
     message: string = "Opération réussie",
-    statusCode: number = 200
+    statusCode: number = 200,
   ): Response<ApiResponse<T>> {
     const response: ApiResponse<T> = {
       success: true,
@@ -35,7 +35,7 @@ export class ResponseService {
     res: Response,
     message: string = "Une erreur est survenue",
     statusCode: number = 500,
-    error?: string
+    error?: string,
   ): Response<ApiResponse> {
     const response: ApiResponse = {
       success: false,
@@ -53,7 +53,7 @@ export class ResponseService {
   static validationError(
     res: Response,
     message: string = "Données de validation invalides",
-    errors?: any
+    errors?: string | string[],
   ): Response<ApiResponse> {
     return this.error(res, message, 400, errors);
   }
@@ -61,40 +61,28 @@ export class ResponseService {
   /**
    * Réponse d'erreur d'authentification
    */
-  static unauthorized(
-    res: Response,
-    message: string = "Non autorisé"
-  ): Response<ApiResponse> {
+  static unauthorized(res: Response, message: string = "Non autorisé"): Response<ApiResponse> {
     return this.error(res, message, 401);
   }
 
   /**
    * Réponse d'erreur d'accès interdit
    */
-  static forbidden(
-    res: Response,
-    message: string = "Accès interdit"
-  ): Response<ApiResponse> {
+  static forbidden(res: Response, message: string = "Accès interdit"): Response<ApiResponse> {
     return this.error(res, message, 403);
   }
 
   /**
    * Réponse d'erreur de ressource non trouvée
    */
-  static notFound(
-    res: Response,
-    message: string = "Ressource non trouvée"
-  ): Response<ApiResponse> {
+  static notFound(res: Response, message: string = "Ressource non trouvée"): Response<ApiResponse> {
     return this.error(res, message, 404);
   }
 
   /**
    * Réponse d'erreur de conflit
    */
-  static conflict(
-    res: Response,
-    message: string = "Conflit de données"
-  ): Response<ApiResponse> {
+  static conflict(res: Response, message: string = "Conflit de données"): Response<ApiResponse> {
     return this.error(res, message, 409);
   }
 }

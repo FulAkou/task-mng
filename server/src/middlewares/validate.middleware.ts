@@ -21,7 +21,7 @@ export const validate = (schema: AnyZodObject) => {
         return ResponseService.validationError(
           res,
           "Données de validation invalides",
-          errorMessages
+          errorMessages,
         );
       }
 
@@ -29,7 +29,7 @@ export const validate = (schema: AnyZodObject) => {
         res,
         "Erreur de validation",
         400,
-        error instanceof Error ? error.message : "Erreur inconnue"
+        error instanceof Error ? error.message : "Erreur inconnue",
       );
     }
   };

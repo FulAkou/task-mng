@@ -12,12 +12,7 @@ export class AuthController {
 
     const result = await AuthService.register(name, email, password);
 
-    return ResponseService.success(
-      res,
-      result,
-      "Utilisateur inscrit avec succès",
-      201
-    );
+    return ResponseService.success(res, result, "Utilisateur inscrit avec succès", 201);
   });
 
   /**

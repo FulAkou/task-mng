@@ -26,10 +26,7 @@ const userSchema = new Schema<IUser>(
       unique: true,
       lowercase: true,
       trim: true,
-      match: [
-        /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
-        "Format d'email invalide",
-      ],
+      match: [/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, "Format d'email invalide"],
     },
     password: {
       type: String,
@@ -50,7 +47,7 @@ const userSchema = new Schema<IUser>(
         return ret;
       },
     },
-  }
+  },
 );
 
 // Hash du mot de passe avant sauvegarde
@@ -58,9 +55,7 @@ userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
 
   try {
-    const salt = await bcrypt.genSalt(
-      parseInt(process.env.BCRYPT_ROUNDS || "12")
-    );
+    const salt = await bcrypt.genSalt(parseInt(process.env.BCRYPT_ROUNDS || "12"));
     this.password = await bcrypt.hash(this.password, salt);
     next();
   } catch (error) {
@@ -69,9 +64,7 @@ userSchema.pre("save", async function (next) {
 });
 
 // Méthode pour comparer les mots de passe
-userSchema.methods.comparePassword = async function (
-  candidatePassword: string
-): Promise<boolean> {
+userSchema.methods.comparePassword = async function (candidatePassword: string): Promise<boolean> {
   return bcrypt.compare(candidatePassword, this.password);
 };
 
