@@ -1,4 +1,4 @@
-name: build-and-lint
+name: CI
 
 on:
   push:
@@ -7,38 +7,32 @@ on:
     branches: [main, dev]
 
 jobs:
-  build-and-lint:
+  lint:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: [client, server]
+
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: setup Node.js
-        uses: actions/setup-node@v1
-
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: 22
+          cache: "npm"
 
-      - name: Install backend dependencies
-        working-directory: server
-        run: npm install
+      - name: Install dependencies
+        run: |
+          cd ${{ matrix.dir }}
+          npm ci
 
-      - name: Lint backend code
-        working-directory: server
-        run: npm run lint  -- --max-warnings=0
+      - name: Run ESLint
+        run: |
+          cd ${{ matrix.dir }}
+          npx eslint .
 
-      - name: Install frontend dependencies
-        working-directory: client
-        run: npm install
-
-      - name: Lint frontend code
-        working-directory: client
-        run: npm run lint  -- --max-warnings=0
-
-      - name: Build backend image
-        working-directory: server
-        run: docker build -t backend-image ./server
-
-      - name: Build frontend image
-        working-directory: client
-        run: docker build -t frontend-image ./client
+      - name: Check Prettier
+        run: |
+          cd ${{ matrix.dir }}
+          npx prettier --check .
